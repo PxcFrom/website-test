@@ -1,5 +1,5 @@
 * {
-	font-family: "Rubik", sans-serif, 'Dancing Script', cursive;
+	font-family: "Rubik", sans-serif, ;
 }
 
 body {
@@ -275,7 +275,7 @@ body {
   overflow: scroll;
   color: #000000;
   font-size: 14px;
-  font-family: 'Rubik', sans-serif, 'Dancing Script', cursive;
+  font-family: 'Rubik', sans-serif;
   line-height: 1.80857;
 }
 
@@ -543,7 +543,7 @@ width: 100%;
   margin-left: 60px;
   position: relative;
   font-style: italic;
-  font-family: 'Dancing Script', cursive;
+  font-family: cursive;
   font-size: 25px;
   
 }
@@ -767,7 +767,7 @@ text-align: center;
 }
 
 .perfil-egresado-content li{
-font-family: 'Dancing Script', cursive;
+font-family: cursive;
 font-size: 20px;
 margin-top: 20px;
 margin-left: 70px;
@@ -776,7 +776,7 @@ text-align: center;
 }
 
 .nosotros-content p{
-font-family: 'Dancing Script', cursive;
+font-family: cursive;
   font-size: 20px;
   margin-top: -70px;
 margin-left: 76px;
@@ -1176,7 +1176,7 @@ margin-bottom: 12px;
   margin-left: 33%;
   color: #FFFFFF;
   font-size: 50px;
-font-family: 'Dancing Script', cursive;
+font-family:cursive;
 font-style: italic;
 font-weight: bold;
 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -1188,7 +1188,7 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin-left: 35%;
   color: #FFFFFF;
   font-size: 50px;
-font-family: 'Dancing Script', cursive;
+font-family:cursive;
 font-style: italic;
 font-weight: bold;
 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -1284,15 +1284,17 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     FOOTER
 -------------------------------------------------------------------*/
 .footerlogo{
-width: 70%;
-margin-left: -920px;
+width: 12%;
+margin-top: 50px;
+margin-left: 380px;
+position: absolute;
 
 }
 
 .footerlogo2{
-width: 30%;
-margin-top: 150px;
-margin-left: -1465px;
+width: 50%;
+margin-top: 80px;
+margin-left: -1665px;
 position: relative;
 
 }
@@ -1329,7 +1331,7 @@ footer {
 }
 
 .col h3{
-  margin-left: 85px;
+  margin-left: 129px;
 }
 
 .col p{
@@ -1352,6 +1354,33 @@ margin-left: 90px;
     text-align: center;
     margin-top: 20px;
 }
+
+.desarrolladores{
+  margin-left: 300px;
+}
+
+
+.desarrolladores1{
+  margin-left: -80px;
+}
+
+.desarrolladores2{
+  position:absolute;
+  margin-left: 120px;
+  margin-top: -102px
+}
+
+.desarrolladores3{
+  position:absolute;
+  margin-left: 50px;
+  margin-top: -20px;
+}
+
+
+.tutora{
+  margin-left: -350px;
+}
+
 
 
 /* FOOTER QUERY's */
