@@ -1,5 +1,5 @@
 * {
-	font-family: "Rubik", sans-serif;
+	font-family: "Rubik", sans-serif, ;
 }
 
 body {
@@ -144,27 +144,27 @@ body {
  display: block; /* Hacer que los enlaces ocupen todo el ancho */  
 }  
 
-.dropdown-item1:hover{
-  background: #02af45;
+.dropdown-item1:hover{ /* deporte */
+  background: #02af45; /* verde*/
   color: white;
 }
-.dropdown-item2:hover{
-  background: #E41818;
-  color: white;
-}
-
-.dropdown-item3:hover{
-  background: #001aff;
+.dropdown-item2:hover{ /* informatica */
+  background: #001aff; /* azul */
   color: white;
 }
 
-.dropdown-item4:hover{
-  background: #720000;
+.dropdown-item3:hover{ /* administracion */
+  background: #720000; /* vinotinto */
   color: white;
 }
 
-.dropdown-item5:hover{
-  background: #0DE235;
+.dropdown-item4:hover{ /* agro */
+  background: #0DE235; /* verde agro*/
+  color: white;
+}
+
+.dropdown-item5:hover{ /* contaduria */
+  background: #E41818; /* rojo */  
   color: white;
 }
 
@@ -1336,6 +1336,8 @@ footer {
   font-size: 15px;
 margin-left: 90px;
 }
+
+
 .social-icons {
     list-style: none;
     padding: 0;
