@@ -350,6 +350,7 @@ transition: all .3s ease-in-out;
 /* Estilo del Footer */
 footer {
   background-color: #f5f5f5; /* Define el color de fondo del pie de página */
+  padding: 20px; /* Agrega espacio superior e inferior al pie de página */
   text-align: center; /* Alinea el contenido del pie de página al centro */
 }
 
@@ -1282,93 +1283,211 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 /*------------------------------------------------------------------
     FOOTER
 -------------------------------------------------------------------*/
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-.container {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
-/*:::::Pie de Pagina*/
-.pie-pagina{
-    width: 100%;
-    background-color: #2561D0;
-}
-.pie-pagina .grupo-1{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap:50px;
-    padding: 45px 0px;
-}
-.pie-pagina .grupo-1 .box figure{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.pie-pagina .grupo-1 .box figure img{
-    width: 250px;
-}
-.pie-pagina .grupo-1 .box h2{
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-.pie-pagina .grupo-1 .box p{
-    color: #efefef;
-    margin-bottom: 10px;
-}
-.pie-pagina .grupo-1 .red-social a{
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    margin-right: 10px;
-    background-color: #0e2653;
-    text-align: center;
-    transition: all 300ms ease;
-}
-.pie-pagina .grupo-1 .red-social a:hover{
-    color: aqua;
-}
-.pie-pagina .grupo-2{
-    background-color: #0e2653;
-    padding: 15px 10px;
-    text-align: center;
-    color: #fff;
-}
-.pie-pagina .grupo-2 small{
-    font-size: 15px;
-}
-
 .footerlogo{
-margin-left: -10px;
-margin-top: -300px !important;
-width: 85% !important;
+width: 70%;
+margin-left: -920px;
+
 }
 
 .footerlogo2{
-width: 85% !important;
-margin-top: 150px !important;
-margin-left: -30px;
+width: 30%;
+margin-top: 150px;
+margin-left: -1465px;
+position: relative;
+
 }
 
 
-@media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
-        padding: 35px 0px;
-    }
+footer {
+    background-color: #2561D0;
+    padding: 0px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 2px 18px rgba(0, 0, 0, 80.98);
 }
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1;
+    padding: 0 20px;
+    color: white;
+    margin-top: 25px;
+}
+
+.col2 {
+    flex: 1;
+    padding: 0 0px;
+    color: white;
+}
+
+.col h3{
+  margin-left: 85px;
+}
+
+.col p{
+  font-size: 15px;
+margin-left: 90px;
+}
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* FOOTER QUERY's */
+@media (min-width:901px) and (max-width:1024px) {  
+ .footerlogo {  
+ width:50%; /* Ajustar el tamaño de la imagen */  
+ margin-left:-480px; /* Quitar el margen para centrar */  
+ display: block; /* Mostrar como bloque */  
+ }  
+
+ .footerlogo2 {  
+ width:20%; /* Ajustar el tamaño de la segunda imagen */  
+ margin-left: -280px; /* Quitar el margen para centrar */ 
+ margin-top: -20px;
+ }  
+
+ .row {  
+ flex-direction: row; /* Mantener la fila */  
+ flex-wrap: wrap; /* Permitir el wrap */  
+ justify-content: center; /* Centrar las columnas */  
+ }  
+
+ .col, .col2 {  
+ flex-basis:45%; /* Asegura que ocupen el45% del ancho */  
+ padding:10px; /* Espacio interno */  
+ }  
+
+ .col h3, .col p{  
+ margin-left:200px; /* Quitar el margen */  
+ margin-top: 10px;
+ }  
+}  
+
+
+
+
+/* Estilos para pantallas menores a599px */  
+@media (max-width:599px) {  
+ .footerlogo {  
+  display: none;  
+ width:50%; /* Hacer la imagen más grande */  
+ margin-left:30px; /* Quitar margen */  
+ margin-top: -300px;
+ }  
+
+ .footerlogo2 {  
+  display: none;  
+ width:30%; /* Hacer la segunda imagen más grande */  
+ margin-top: -290px; /* Cambiar el margen superior */  
+ margin-left: 100px; /* Quitar margen */  
+ }  
+
+ .row {  
+ flex-direction: column; /* Cambiar a columna */  
+ align-items: center; /* Centrar los elementos */  
+ text-align: center; /* Centrando texto */  
+ }  
+
+ .col, .col2 {  
+ flex-basis:100%; /* Hacer que cada columna ocupe el100% */  
+ padding:10px; /* Espacio interno */  
+ margin-bottom:20px; /* Espacio entre secciones */  
+ }  
+
+ .col h3, .col p{  
+ font-size: 10px;
+ margin-left:80px; /* Quitar el margen */  
+ margin-top: 10px;
+ }  
+
+ .tutor h3{
+margin-top: -300px;
+margin-left: 220px;
+ }
+
+ .tutor p{
+margin-top: 10px;
+margin-left: 220px;
+ }
+
+ .devs h3{
+margin-left: -120px;
+ }
+
+ .devs p{
+margin-left: -120px;
+ }
+
+}  
+
+/* Estilos para pantallas entre600px y900px */  
+@media (min-width:600px) and (max-width:900px) {  
+ .footerlogo {  
+   display: none;  
+ width:60%; /* Ajustar tamaño de imagen */  
+ margin-left:0;  
+ }  
+
+ .footerlogo2 {  
+   display: none;  
+ width:40%; /* Ajustar tamaño de la imagen */  
+ margin-left:0;  
+ }  
+
+ .row {  
+ flex-direction: row; /* Mantener la disposición en fila */  
+ justify-content: center; /* Centrar las columnas */  
+ }  
+
+ .col, .col2 {  
+ flex-basis:45%; /* Como en el anterior media query */  
+ padding:10px; /* Espacio interno */  
+ }  
+
+ .col h3, .col p {  
+ margin-left:0; /* Quitar margen */  
+ } 
+
+ .tutor h3{
+margin-top: -240px;
+margin-left: 110px;
+ }
+
+ .tutor p{
+margin-top: 10px;
+margin-left: 110px;
+ }
+
+ .devs h3{
+margin-left: -120px;
+ }
+
+ .devs p{
+margin-left: -120px;
+ }
+
+}
+
 
 /*------------------------------------------------------------------
     animacion de texto
@@ -1536,7 +1655,7 @@ font-size: 13px;
 
 
 .circle-marcos {
-  background: #006adD;
+  background: yellow;
 }
 
 .circle-adm {
