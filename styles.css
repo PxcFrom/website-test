@@ -111,7 +111,7 @@ body {
 }
 
 .logo3{
-margin-left: -170px;
+margin-left: -150px;
 
 }
 
@@ -483,9 +483,8 @@ footer {
   animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
-@media (max-width:900px) {  
 
-}  
+
 
 /* Media query para móviles */  
 @media (max-width:600px) {  
@@ -549,8 +548,9 @@ width: 100%;
   margin-left: 10px;
   margin-top: -50px;
   width: 65px;
-
 }
+
+
 .icono-book-nosotros{
   position: relative;
   margin-left: 10px;
@@ -563,14 +563,13 @@ width: 100%;
   position: relative;
   font-style: italic;
   font-family: cursive;
-  font-size: 25px;
-  
+  font-size: 25px; 
 }
 
 
 .h2-administracion{
  margin-left: 80px;
-  margin-top: 100px;
+  margin-top: 50px;
   color: darkred;
   font-style: italic;
   font-size: 20px;
@@ -579,7 +578,7 @@ width: 100%;
 }
 
 .h3-administracion{
-  margin-left: 600px;
+  margin-left: 570px;
   margin-top: 100px;
   color: #A70606;
   font-style: italic;
@@ -587,6 +586,7 @@ width: 100%;
   position: relative;
     text-decoration: underline;
 }
+
 .h3-administracion2{
   margin-left: 950px;
   margin-top: 20px;
@@ -610,7 +610,7 @@ width: 100%;
 
 .h2-agro{
   margin-left: 80px;
-  margin-top: 100px;
+  margin-top: 50px;
   color: #0DE235;
   font-style: italic;
   font-size: 20px;
@@ -619,7 +619,7 @@ text-decoration: underline;
 }
 
 .h3-agroalimentacion{
-  margin-left: 600px;
+  margin-left: 570px;
   margin-top: 100px;
   color: #0DE235;
   font-style: italic;
@@ -650,7 +650,7 @@ text-decoration: underline;
 
 .h2-contaduria{
   margin-left: 80px;
-  margin-top: 100px;
+  margin-top: 50px;
   color: #E31616;
   font-style: italic;
   font-size: 20px;
@@ -659,7 +659,7 @@ text-decoration: underline;
 }
 
 .h3-contaduria{
-  margin-left: 600px;
+  margin-left: 570px;
   margin-top: 100px;
   color: #E31616;
   font-style: italic;
@@ -690,13 +690,14 @@ text-decoration: underline;
 
 .h2-deporte{
  margin-left: 80px;
-  margin-top: 100px;
+  margin-top: 55px;
   color: green;
   font-style: italic;
   font-size: 20px;
   position: relative;
 text-decoration: underline;
 }
+
 .h3-deporte{
   margin-left: 600px;
   margin-top: 100px;
@@ -706,6 +707,7 @@ text-decoration: underline;
   position: relative;
     text-decoration: underline;
 }
+
 .h3-deporte2{
   margin-left: 950px;
   margin-top: 80px;
@@ -728,7 +730,7 @@ color: green;
 
 .h2-informatica{
   margin-left: 80px;
-  margin-top: 100px;
+  margin-top: 50px;
   color: #0059ff;
   font-style: italic;
   font-size: 20px;
@@ -737,7 +739,7 @@ color: green;
 }
 
 .h3-informatica{
-    margin-left: 600px;
+  margin-left: 570px;
   margin-top: 100px;
   color: #0059ff;
   font-style: italic;
@@ -797,14 +799,14 @@ text-align: center;
 .nosotros-content p{
 font-family: cursive;
   font-size: 20px;
-  margin-top: -70px;
+  margin-top: -119px;
 margin-left: 76px;
 margin-right: 70px;
   text-align: center;
 }
 
 .h1-ubicacion{
-   margin-left: 561px;
+  margin-left: 514px;
   margin-top: 100px;
   color: #0059ff;
   font-style: italic;
@@ -814,7 +816,7 @@ margin-right: 70px;
 }
 
 .ubicacionimg{
-margin-left: 400px;
+margin-left: 374px;
 padding-bottom: 1px;
 }
 
@@ -845,21 +847,6 @@ padding-bottom: 1px;
   margin-top: -60px;
   width: 65px;
    }
-
-
-.h1-ubicacion{
-  margin-left: 42px;
-  margin-top: 100px;
-  font-size: 22px;
-}
-
-.ubicacionimg{
- margin-left: 3px;
- width:97%; /* Hace que el iframe ocupe el100% del ancho */  
- height:250px; /* Altura fija para el iframe */  
- border:0; /* Elimina el borde del iframe */
-}
-
 }
  
 
@@ -1466,6 +1453,7 @@ margin-left: 90px;
  margin-left: 218px; /* Quitar margen */  
  }  
 
+
  .row {  
  flex-direction: column; /* Cambiar a columna */  
  align-items: center; /* Centrar los elementos */  
@@ -1479,7 +1467,7 @@ margin-left: 90px;
  }  
 
  .col h3, .col p{  
- font-size: 10px;
+ font-size: 15px;
  margin-left:80px; /* Quitar el margen */  
  margin-top: 10px;
  }  
@@ -1500,13 +1488,13 @@ margin-left: 90px;
 .desarrolladores2{
   position:absolute;
   text-align: left;
-  margin-left: 65px;
-  margin-top: -65px
+  margin-left: 81px;
+  margin-top: -94px
 }
 
 .desarrolladores3{
   position:absolute;
-  margin-left: 5px;
+  margin-left: 11px;
   margin-top: -20px;
 }
 
@@ -1845,12 +1833,29 @@ font-size: 13px;
  }  
 
   .circle-marcos, .circle-adm, .circle-agro, .circle-cont, .circle-dep, .circle-inf {  
-    margin-left: 26px!important;
+    margin-left: 22px!important;
   }
 
   .box{
     margin-top: -36px;
   }
+
+  .h1-ubicacion{
+  margin-left: 35px;
+  margin-top: 100px;
+  font-size: 22px;
+}
+
+.ubicacionimg{
+ margin-left: 3px;
+ width:97%; /* Hace que el iframe ocupe el100% del ancho */  
+ height:250px; /* Altura fija para el iframe */  
+ border:0; /* Elimina el borde del iframe */
+}
+
+.inf-mail {
+  margin-left: 0;
+}
 
 } 
 
