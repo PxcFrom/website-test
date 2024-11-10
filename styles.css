@@ -54,8 +54,9 @@ body {
 
 }  
 
-.header__nav-item:hover{
-    border-bottom: 1px solid#0036FF;
+.header__nav-item{
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.64);
+  border-bottom: 2px solid#0036FF;
 
 }
 
@@ -1084,6 +1085,11 @@ font-size: 13px;
     justify-content: center; /* Centrar los botones horizontalmente */  
     flex-wrap: wrap; /* Permitir que los botones se envuelvan si es necesario */  
 }  
+
+.f-logo, .ig-logo, .x-logo, .y-logo{
+  margin-top: 9px;
+}
+
 
 .red-social a {  
     display: inline-block;  
