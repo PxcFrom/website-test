@@ -13,98 +13,98 @@ body {
 /* Cuerpo del header*/
 
 .header {
- background-color: #fff;  
- display: flex;  
- justify-content: space-between;  
- align-items: center;  
- position: relative;  
- z-index:10;  
- text-align: center;  
- font-size: 20px;  
+  background-color: #fff;  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  position: relative;  
+  z-index:10;  
+  text-align: center;  
+  font-size: 20px;  
 }  
 
 .header__open-nav-button {  
-    position: fixed; /* Para que se mantenga en la esquina */  
-    top: 20px; /* Ajusta la posición vertical según sea necesario */  
-    right: 20px; /* Ajusta la posición horizontal según sea necesario */  
-    font-size: 3rem; /* Estilo para el botón */  
-    font-weight:600;  
-    z-index: 15; /* Asegura que esté sobre el menú */  
-    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */  
-    background-color: transparent; /* Fondo transparente */  
-    border: none; /* Sin borde */  
-    color: #48e; /* Color del botón */  
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 3rem;
+  font-weight:600;  
+  z-index: 15;
+  cursor: pointer;
+  background-color: transparent;
+  border: none; 
+  color: #48e;
 }  
 
 .header__nav {  
-    display: none; /* Oculto por defecto */  
-    background-color: rgba(255, 255, 255, 0.9);   
-    position: fixed;  
-    height: 100vh;    
-    width: 100vw;    
-    top: 0;  
-    left: 0;  
-    z-index: 10;     
-    flex-direction: column;   
-    align-items: center;   
-    justify-content: center;
-    font-size: 17px;
-    font-weight: bold;
-   font-family: cursive;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.9);   
+  position: fixed;  
+  height: 100vh;    
+  width: 100vw;    
+  top: 0;  
+  left: 0;  
+  z-index: 10;     
+  flex-direction: column;   
+  align-items: center;   
+  justify-content: center;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: cursive;
 
 }  
 
 .header__nav-item{
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.64);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.64);
   border-bottom: 2px solid#0036FF;
 
 }
 
 .header__nav-list { 
-    display: flex;  
-    flex-direction: column;  
-    height: auto;   
-    margin: 0;   
-    justify-content: center;   
+  display: flex;  
+  flex-direction: column;  
+  height: auto;   
+  margin: 0;   
+  justify-content: center;   
 }   
 
 .header__open-nav-button:hover {  
-    color: #000; /* Cambiar color al pasar el cursor */  
+  color: #48e;
 }  
 
 /* Mostrar menú al hacer clic */  
 .header__checkbox:checked ~ .header__nav {  
-    display: flex;  
+  display: flex;  
 }   
 
 .header__checkbox {  
- display: none;  
+  display: none;  
 }  
 
 
 .header__nav-item { 
-  margin: 10px 0; /* Añadir espacio entre los elementos */  
- list-style: none;  
- position: relative; /* Establecer posición relativa para el dropdown */  
- align-items: center;
- justify-content: center;
- font-size: 22px;
+  margin: 10px 0;
+  list-style: none;  
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
 
 }  
 
 .header__nav-item a {  
- color: #48e;  
- text-decoration: none;  
+  color: #48e;  
+  text-decoration: none;  
 }  
 
 .header__nav-item :is(:hover, :active) {  
- text-decoration: none;  
+  text-decoration: none;  
 }  
 
 .container-fluid {
-  display: flex; /* Usa flexbox para el diseño horizontal */
-  justify-content: space-between; /* Distribuye el espacio entre el logotipo y el menú */
-  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo1{
@@ -118,8 +118,7 @@ body {
 }
 
 .logo3{
-margin-left: -150px;
-
+  margin-left: -150px;
 }
 
 .logo1-cel  {
@@ -130,54 +129,54 @@ margin-left: -150px;
 /* Estilos para el dropdown */  
 .dropdown { 
   font-size: 14px;
- font-weight: bold;
- font-style: oblique;
- display: none; /* Ocultar el dropdown por defecto */  
- position: absolute;  /* Posicionar el dropdown */  
- top: 100%; /* Colocar debajo del elemento padre */  
- left:0;  
- background-color: hsla(0, 0%, 100%, 0.979); /* Fondo blanco */  
- box-shadow:02px 8px rgba(0,0,0,0.1); /* Sombra */  
- z-index:1; /* Asegurar que se superponga */  
- padding: 10px;
- width: 180px;
+  font-weight: bold;
+  font-style: oblique;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left:0;  
+  background-color: hsla(0, 0%, 100%, 0.979);
+  box-shadow:02px 8px rgba(0,0,0,0.1);
+  z-index:1;
+  padding: 10px;
+  width: 180px;
 }  
 
 .header__nav-item:hover .dropdown {  
- display: block; /* Mostrar el dropdown al hacer hover */  
+  display: block;
 }  
 
 .dropdown li {  
- list-style: none;  
+  list-style: none;  
 }  
 
 .dropdown li a {  
- color: #48e; /* Color del texto del dropdown */  
- padding:10px; /* Espaciado para los enlaces del dropdown */  
- display: block; /* Hacer que los enlaces ocupen todo el ancho */  
+  color: #48e;
+  padding:10px;
+  display: block;
 }  
 
-.dropdown-item1:hover{ /* deporte */
-  background: #02af45; /* verde*/
+.dropdown-item1:hover{
+  background: #02af45;
   color: white;
 }
-.dropdown-item2:hover{ /* informatica */
-  background: #001aff; /* azul */
-  color: white;
-}
-
-.dropdown-item3:hover{ /* administracion */
-  background: #720000; /* vinotinto */
+.dropdown-item2:hover{
+  background: #001aff;
   color: white;
 }
 
-.dropdown-item4:hover{ /* agro */
-  background: #0DE235; /* verde agro*/
+.dropdown-item3:hover{
+  background: #720000;
   color: white;
 }
 
-.dropdown-item5:hover{ /* contaduria */
-  background: #E41818; /* rojo */  
+.dropdown-item4:hover{
+  background: #0DE235;
+  color: white;
+}
+
+.dropdown-item5:hover{
+  background: #E41818;
   color: white;
 }
 
@@ -251,8 +250,7 @@ text-decoration: none!important;
 opacity: 1
 }
 
-a,
-.btn {
+a, .btn {
 text-decoration: none !important;
 outline: none !important;
 -webkit-transition: all .3s ease-in-out;
@@ -263,17 +261,23 @@ transition: all .3s ease-in-out;
 }
 
 
-
-
-
+/* Boton ir Arriba */
+.ir-arriba {
+  width: 3.5%;  
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  padding: 20px;  
+  z-index: 1;
+}
 
 
 
 /* Estilo del Footer */
 footer {
-  background-color: #f5f5f5; /* Define el color de fondo del pie de página */
-  padding:20px ; /* Agrega espacio superior e inferior al pie de página */
-  text-align: center; /* Alinea el contenido del pie de página al centro */
+  background-color: #f5f5f5;
+  padding:20px;
+  text-align: center;
 }
 
 
@@ -281,7 +285,6 @@ footer {
 /*------------------------------------------------------------------
     Estilo del título de las subpáginas banner
 -------------------------------------------------------------------*/
-
 .banner1{
   margin-top: 1%;
   background-image:url(images/banner\ informatica.png);
@@ -289,9 +292,8 @@ footer {
   background-size: cover;
   height: 50%;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.64);
- 
-
 }
+
 .banner2{
   margin-top: 1%;
   background-image:url(images/banner2.jpg);
@@ -300,6 +302,7 @@ footer {
   height: 50%;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.64);
 }
+
 .banner3{
   margin-top: 1%;
   background-image:url(images/banner3.jpg);
@@ -308,6 +311,7 @@ footer {
   height: 50%;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.64);
 }
+
 .banner4{
   margin-top: 1%;
   background-image:url(images/banner4.png);
@@ -316,6 +320,7 @@ footer {
   height: 50%;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.64);
 }
+
 .banner5{
   margin-top: 1%;
   background-image:url(images/banner5.png);
@@ -347,7 +352,7 @@ footer {
   margin-top: 3%;
   width: 100%;
   position: relative;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.64);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.64);
 }
 
 .banner-content h1{
@@ -358,6 +363,7 @@ footer {
   -webkit-animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
+
 .banner-content h2{
   font-size: 38px;
   color: rgb(255, 255, 255);
@@ -366,17 +372,20 @@ footer {
   -webkit-animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
+
 .banner-content p {
   font-size: 20px;
   color: #ffffff;
   text-align: center;
 }
+
 .subpagina-content h1{
   margin-top: 180px;
   font-size: 30px;
   color: #ffffff;
   text-align: center;
 }
+
 .subpagina-content h2{
   margin-top: 180px;
   font-size: 30px;
@@ -388,12 +397,9 @@ footer {
 
 
 
-
 /*------------------------------------------------------------------
     Estilo las subpáginas 
 -------------------------------------------------------------------*/
-
-
 .icono-book{
   position: relative;
   margin-left: 10px;
@@ -401,13 +407,13 @@ footer {
   width: 65px;
 }
 
-
 .icono-book-nosotros{
   position: relative;
   margin-left: 10px;
   margin-top: 80px;
   width: 65px;
 }
+
 .perfil-egresado-content h1{
   margin-top: -50px;
   margin-left: 60px;
@@ -419,7 +425,7 @@ footer {
 
 
 .h2-administracion{
- margin-left: 80px;
+  margin-left: 80px;
   margin-top: 50px;
   color: darkred;
   font-style: italic;
@@ -435,18 +441,18 @@ footer {
   font-style: italic;
   font-size: 20px;
   position: relative;
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .h3-administracion2{
   margin-left: 950px;
   margin-top: 20px;
-   color: #A70606;
+  color: #A70606;
   font-style: italic;
   font-size: 20px;
   position: relative;
-    text-decoration: underline;
-  }
+  text-decoration: underline;
+}
 
 .h3-administracion3{
   margin-left: 350px;
@@ -455,9 +461,8 @@ footer {
   font-style: italic;
   font-size: 20px;
   position: relative;
-    text-decoration: underline;
-  }
-
+  text-decoration: underline;
+}
 
 .h2-agro{
   margin-left: 80px;
@@ -466,7 +471,7 @@ footer {
   font-style: italic;
   font-size: 20px;
   position: relative;
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .h3-agroalimentacion{
@@ -476,18 +481,18 @@ text-decoration: underline;
   font-style: italic;
   font-size: 20px;
   position: relative;
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .h3-agroalimentacion2{
   margin-left: 950px;
   margin-top: 20px;
-   color: #0DE235;
+  color: #0DE235;
   font-style: italic;
   font-size: 20px;
   position: relative;
-    text-decoration: underline;
-  }
+  text-decoration: underline;
+}
 
   .h3-agroalimentacion3{
   margin-left: 350px;
@@ -496,8 +501,8 @@ text-decoration: underline;
   font-style: italic;
   font-size: 20px;
   position: relative;
-    text-decoration: underline;
-  }
+  text-decoration: underline;
+}
 
 .h2-contaduria{
   margin-left: 80px;
@@ -516,7 +521,7 @@ text-decoration: underline;
   font-style: italic;
   font-size: 20px;
   position: relative;
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .h3-contaduria2{
@@ -526,8 +531,8 @@ text-decoration: underline;
   font-style: italic;
   font-size: 20px;
   position: relative;
-    text-decoration: underline;
-  }
+  text-decoration: underline;
+}
 
   .h3-contaduria3{
   margin-left: 350px;
@@ -537,16 +542,16 @@ text-decoration: underline;
   font-size: 20px;
   position: relative;
     text-decoration: underline;
-  }
+}
 
 .h2-deporte{
- margin-left: 80px;
+  margin-left: 80px;
   margin-top: 55px;
   color: green;
   font-style: italic;
   font-size: 20px;
   position: relative;
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .h3-deporte{
@@ -556,18 +561,18 @@ text-decoration: underline;
   font-style: italic;
   font-size: 20px;
   position: relative;
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .h3-deporte2{
   margin-left: 950px;
   margin-top: 20px;
-color: green;
+  color: green;
   font-style: italic;
   font-size: 20px;
   position: relative;
-    text-decoration: underline;
-  }
+  text-decoration: underline;
+}
 
 .h3-deporte3{
   margin-left: 350px;
@@ -576,8 +581,8 @@ color: green;
   font-style: italic;
   font-size: 20px;
   position: relative;
-    text-decoration: underline;
-  }
+  text-decoration: underline;
+}
 
 .h2-informatica{
   margin-left: 80px;
@@ -596,7 +601,7 @@ color: green;
   font-style: italic;
   font-size: 20px;
   position: relative;
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .h3-informatica2{
@@ -606,7 +611,7 @@ color: green;
   font-style: italic;
   font-size: 20px;
   position: relative;
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .h3-informatica3{
@@ -616,44 +621,43 @@ color: green;
   font-style: italic;
   font-size: 20px;
   position: relative;
-    text-decoration: underline;
-  }
+  text-decoration: underline;
+}
 
 .imgcev-d, .imgcev-i, .imgcev-a, .imgcev-ag, .imgcev-c{
- 
-   margin-left: 820px;
-   box-shadow: 0 5px 15px rgba(3, 89, 92, .5);
+  margin-left: 820px;
+  box-shadow: 0 5px 15px rgba(3, 89, 92, .5);
 }
 
 .imgprector{
-   margin-left: 220px;
-   box-shadow: 0 5px 15px rgba(3, 89, 92, .5);
+  margin-left: 220px;
+  box-shadow: 0 5px 15px rgba(3, 89, 92, .5);
 }
 
 
 .perfil-egresado-content p{
-font-family: cursive;
-font-size: 20px;
-margin-left: 70px;
-margin-right: 70px;
-text-align: center;
+  font-family: cursive;
+  font-size: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
+  text-align: center;
 }
 
 .perfil-egresado-content li{
-font-family: cursive;
-font-size: 20px;
-margin-top: 20px;
-margin-left: 70px;
-margin-right: 70px;
-text-align: center;
+  font-family: cursive;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
+  text-align: center;
 }
 
 .nosotros-content p{
-font-family: cursive;
+  font-family: cursive;
   font-size: 20px;
   margin-top: -119px;
-margin-left: 76px;
-margin-right: 70px;
+  margin-left: 76px;
+  margin-right: 70px;
   text-align: center;
 }
 
@@ -668,12 +672,12 @@ margin-right: 70px;
 }
 
 .ubicacionimg{
-margin-left: 374px;
-padding-bottom: 1px;
+  margin-left: 374px;
+  padding-bottom: 1px;
 }
 
 .nosotros-content{
-    background: url('images/dottet_bg.png');
+  background: url('images/dottet_bg.png');
   background-size: cover;
   background-position: center bottom;
 }
@@ -696,8 +700,8 @@ padding-bottom: 1px;
 -------------------------------------------------------------------*/
 .slider-frame{
   width: 100%;
-    height: auto;
-    overflow: hidden;
+  height: auto;
+  overflow: hidden;
 }
 
 .slider-frame ul{
@@ -710,7 +714,6 @@ padding-bottom: 1px;
 .slider-frame li {
   width: 100%;
   list-style: none;
-
 }
 
 .slider-frame, .slider-img {
@@ -723,10 +726,10 @@ padding-bottom: 1px;
   margin-left: 33%;
   color: #FFFFFF;
   font-size: 50px;
-font-family:cursive;
-font-style: italic;
-font-weight: bold;
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family:cursive;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .h1-carrusel2{
@@ -735,11 +738,10 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin-left: 35%;
   color: #FFFFFF;
   font-size: 50px;
-font-family:cursive;
-font-style: italic;
-font-weight: bold;
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
+  font-family:cursive;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -756,8 +758,6 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   position: relative;
 }
 
-
-
 .ImgFases-d {
   margin-left: 350px;
   margin-top: 3%;
@@ -773,50 +773,48 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     FOOTER
 -------------------------------------------------------------------*/
 .footerlogo{
-width: 12%;
-margin-top: -16px;
-margin-left: 380px;
-position: absolute;
-
+  width: 12%;
+  margin-top: -16px;
+  margin-left: 380px;
+  position: absolute;
 }
 
 .footerlogo2{
-width: 40%;
-margin-top: 25px;
-margin-left: -1665px;
-position: relative;
-
+  width: 40%;
+  margin-top: 25px;
+  margin-left: -1665px;
+  position: relative;
 }
 
 
 footer {
-    background-color: #2561D0;
-    padding: 2px 1px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        box-shadow: 0px 2px 18px rgba(0, 0, 0, 80.98);
+  background-color: #2561D0;
+  padding: 2px 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 18px rgba(0, 0, 0, 80.98);
 }
 
 .container {
-    max-width: 1140px;
-    margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .row {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .col {
-    flex: 1;
-    padding: 0 20px;
-    color: white;
-    margin-top: 25px;
+  flex: 1;
+  padding: 0 20px;
+  color: white;
+  margin-top: 25px;
 }
 
 .col2 {
-    flex: 1;
-    padding: 0 0px;
-    color: white;
+  flex: 1;
+  padding: 0 0px;
+  color: white;
 }
 
 .col h3{
@@ -825,20 +823,19 @@ footer {
 
 .col p{
   font-size: 15px;
-margin-left: 90px;
+  margin-left: 90px;
 }
 
 
 .social-icons {
-    list-style: none;
-    padding: 0;
-    display: flex;
+  list-style: none;
+  padding: 0;
+  display: flex;
 }
 
 .social-icons li {
-    margin-right: 10px;
+  margin-right: 10px;
 }
-
 
 
 .desarrolladores{
@@ -849,22 +846,21 @@ margin-left: 90px;
 
 .desarrolladores1{
   margin-left: -105px;
-    margin-top: -15px;
+  margin-top: -15px;
 }
 
 .desarrolladores2{
-  position:absolute;
+  position: absolute;
   text-align: left;
   margin-left: 120px;
   margin-top: -99px
 }
 
 .desarrolladores3{
-  position:absolute;
+  position: absolute;
   margin-left: 50px;
   margin-top: -20px;
 }
-
 
 .tutora{
   margin-left: -490px;
@@ -881,7 +877,6 @@ margin-left: 90px;
 /*------------------------------------------------------------------
     animacion de texto
 -------------------------------------------------------------------*/
-
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
@@ -894,6 +889,7 @@ margin-left: 90px;
     opacity: 1;
   }
 }
+
 @keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
@@ -907,10 +903,11 @@ margin-left: 90px;
   }
 }
 
+
+
 /*------------------------------------------------------------------
     animacion de fases
 -------------------------------------------------------------------*/
-
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;
@@ -919,6 +916,7 @@ margin-left: 90px;
     opacity: 1;
   }
 }
+
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -927,10 +925,6 @@ margin-left: 90px;
     opacity: 1;
   }
 }
-
-
-
-
 
 
 
@@ -952,9 +946,6 @@ margin-left: 90px;
 /*------------------------------------------------------------------
     Contactos
 -------------------------------------------------------------------*/
- 
-  
-
 .container-contact{
   display: flex;  
   flex-direction: column;  
@@ -974,13 +965,13 @@ margin-left: 90px;
   background: #fff;  
   border-radius: 5px;  
   overflow: hidden;
-transition: .5s;
-margin: 20px;
+  transition: .5s;
+  margin: 20px;
 }  
 
 .card:hover {
-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
-transform: translateY(-15px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  transform: translateY(-15px);
 }
 
 .card .head {  
@@ -1033,8 +1024,8 @@ font-size: 15px;
 
 .card .description p {
   color: black;
-margin-top: 4px;
-font-size: 13px;
+  margin-top: 4px;
+  font-size: 13px;
 }
 
 .inf-mail {
@@ -1074,16 +1065,16 @@ font-size: 13px;
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 .box {  
-    display: flex; /* Usar flexbox para centrar los elementos */  
-    flex-direction: column; /* Asegura que los elementos se alineen en columna */  
-    align-items: center; /* Centrar horizontalmente */  
-    margin-top: -12px; /* Margen superior */  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -12px;
 }  
 
 .red-social {  
-    display: flex; /* Usar flexbox en la sección de redes sociales */  
-    justify-content: center; /* Centrar los botones horizontalmente */  
-    flex-wrap: wrap; /* Permitir que los botones se envuelvan si es necesario */  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }  
 
 .f-logo, .ig-logo, .x-logo, .y-logo{
@@ -1092,20 +1083,20 @@ font-size: 13px;
 
 
 .red-social a {  
-    display: inline-block;  
-    text-decoration: none;  
-    width: 45px;  
-    height: 45px;  
-    line-height: 45px;  
-    color: #fff;  
-    margin-right: 10px;  
-    background-color: #0e2653;  
-    text-align: center;  
-    transition: all 300ms ease;  
+  display: inline-block;  
+  text-decoration: none;  
+  width: 45px;  
+  height: 45px;  
+  line-height: 45px;  
+  color: #fff;  
+  margin-right: 10px;  
+  background-color: #0e2653;  
+  text-align: center;  
+  transition: all 300ms ease;  
 }  
 
 .red-social a:hover {  
-    color: aqua;  
+  color: aqua;  
 }
 
 .ubicacion img{
